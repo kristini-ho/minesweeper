@@ -73,8 +73,8 @@ public class mines extends javax.swing.JFrame {
     }    
     private void images(){
         try{
-            flag = ImageIO.read(new File("flag.png"));
-            bomb = ImageIO.read(new File("bomb.png"));
+            flag = ImageIO.read(new File("images/flag.png"));
+            bomb = ImageIO.read(new File("images/bomb.png"));
         }catch(IOException e){;}
     }
     private void panes(){
@@ -201,7 +201,7 @@ public class mines extends javax.swing.JFrame {
         timeElapsed.setBounds(30, 470, 150, 80);
         smileyButton.setBackground(null);
         smileyButton.setForeground(null);
-        smileyButton.setIcon(new javax.swing.ImageIcon("smiley.png"));
+        smileyButton.setIcon(new javax.swing.ImageIcon("images/smiley.png"));
         getContentPane().add(smileyButton);
         smileyButton.setBounds(220, 490, 40, 40);
         fileGame.setText("Game");
@@ -241,13 +241,13 @@ public class mines extends javax.swing.JFrame {
                  String s = JOptionPane.showInputDialog("Enter a number:\n1) Classic 2) Red 3) Purple");
                  if(s != null){ int n = Integer.parseInt(s);
                    if(n == 2){
-                         try{ bomb = ImageIO.read(new File("redflower.png")); }                            
+                         try{ bomb = ImageIO.read(new File("images/redflower.png")); }
                          catch(IOException x){;}
                    }else if(n == 3){
-                         try{bomb = ImageIO.read(new File("littlepurple.png")); }                            
+                         try{bomb = ImageIO.read(new File("images/littlepurple.png")); }
                          catch(IOException x){;}
                    }else if(n == 1){
-                         try{ bomb = ImageIO.read(new File("bomb.png")); }                            
+                         try{ bomb = ImageIO.read(new File("images/bomb.png")); }
                         catch(IOException x){;}
                    }
                }
